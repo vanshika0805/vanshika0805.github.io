@@ -1,8 +1,171 @@
+<!DOCTYPE html>
+
 <html>
+
 <head>
-<title> HII </title>
+
+    <title>hiii</title>
+
+    <style>
+
+        * {
+
+            box-sizing: border-box;
+
+        }
+
+        div {
+
+            padding: 10px;
+
+            background-color: #f6f6f6;
+
+            overflow: hidden;
+
+        }
+
+        input[type=text], textarea, select {
+
+            font: 17px Calibri;
+
+            width: 100%;
+
+            padding: 12px;
+
+            border: 1px solid #ccc;
+
+            border-radius: 4px;
+
+        }
+
+        input[type=button]{
+
+            font: 17px Calibri;
+
+            width: auto;
+
+            float: right;
+
+            cursor: pointer;
+
+            padding: 7px;
+
+        }
+
+    </style>
+
 </head>
+
 <body>
-HII there
+
+    <div>
+
+       
+
+        <!--Add few elements to the form-->
+
+ 
+
+        <div>
+
+            <input type="text" id="txtName" placeholder="Enter your name" />
+
+        </div>
+
+        <div>
+
+            <input type="text" id="txtAge" placeholder="Enter your age" />
+
+        </div>
+
+ 
+
+        <div>
+
+            <input type="text" id="txtEmail" placeholder="Enter your email address" />
+
+        </div>
+
+        <div>
+
+            <input type="text" id="txtPosition" placeholder="Enter your Position" />
+
+        </div>
+
+        <div>
+
+            <input type="text" id="txtSalary" placeholder="Enter your Salary" />
+
+        </div>
+
+ 
+
+       
+
+     
+
+        <div>
+
+            <input type="button" id="bt" value="Submit" onclick="saveFile()" />
+
+        </div>
+
+ 
+
+    </div>
+
 </body>
+
+<script>
+
+    let saveFile = () => {
+
+       
+
+        // Get the data from each element on the form.
+
+        const name = document.getElementById('txtName');
+
+        const age = document.getElementById('txtAge');
+
+        const email = document.getElementById('txtEmail');
+
+        const pos = document.getElementById('txtPosition');
+
+        const salary = document.getElementById('txtSalary');
+
+       
+
+       
+
+       
+
+        // This variable stores all the data.
+
+        let data =
+
+            '\r Name: ' + name.value + ' \r\n ' +
+
+            'Age: ' +age.value + ' \r\n ' +
+
+            'Email: ' + email.value + ' \r\n ' +
+
+            'Position: ' + email.value + ' \r\n ' +
+
+            'Salary: ' + email.value + ' \r\n ' ;
+
+           
+
+          //  'Message: ' + msg.value;
+
+       
+
+       document.write(data);
+
+        newLink.click();
+
+    }
+
+</script>
+
 </html>
